@@ -36,17 +36,17 @@ public class SignIn extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jPasswordField2 = new javax.swing.JPasswordField();
+        FieldNIK = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        FieldTanggalLahir = new javax.swing.JTextPane();
+        FieldJenisKelamin = new javax.swing.JComboBox<>();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
+        FieldEmail = new javax.swing.JTextPane();
         jButton4 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        jPasswordField3 = new javax.swing.JPasswordField();
+        FieldNamaLengkap = new javax.swing.JTextField();
+        FieldNoTelepon = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -108,21 +108,21 @@ public class SignIn extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         jLabel4.setText("JENIS KELAMIN");
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        FieldNIK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                FieldNIKActionPerformed(evt);
             }
         });
 
         jLabel5.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         jLabel5.setText("EMAIL");
 
-        jScrollPane1.setViewportView(jTextPane1);
+        jScrollPane1.setViewportView(FieldTanggalLahir);
 
-        jComboBox1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Laki-Laki", "Perempuan" }));
+        FieldJenisKelamin.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        FieldJenisKelamin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Laki-Laki", "Perempuan" }));
 
-        jScrollPane2.setViewportView(jTextPane2);
+        jScrollPane2.setViewportView(FieldEmail);
 
         jButton4.setBackground(new java.awt.Color(142, 172, 205));
         jButton4.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
@@ -135,6 +135,18 @@ public class SignIn extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         jLabel6.setText("NO TELEPON");
+
+        FieldNamaLengkap.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FieldNamaLengkapActionPerformed(evt);
+            }
+        });
+
+        FieldNoTelepon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FieldNoTeleponActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -149,52 +161,52 @@ public class SignIn extends javax.swing.JFrame {
                 .addGap(27, 27, 27))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(193, 193, 193)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPasswordField3, javax.swing.GroupLayout.DEFAULT_SIZE, 336, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jLabel5)
-                        .addComponent(jTextField2)
                         .addComponent(jLabel4)
                         .addComponent(jLabel3)
                         .addComponent(jLabel1)
                         .addComponent(jLabel2)
-                        .addComponent(jPasswordField2)
                         .addComponent(jScrollPane1)
-                        .addComponent(jComboBox1, 0, 336, Short.MAX_VALUE)
-                        .addComponent(jScrollPane2)))
+                        .addComponent(FieldJenisKelamin, 0, 423, Short.MAX_VALUE)
+                        .addComponent(jScrollPane2)
+                        .addComponent(FieldNamaLengkap)
+                        .addComponent(FieldNIK)
+                        .addComponent(FieldNoTelepon)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
+                .addGap(4, 4, 4)
                 .addComponent(jLabel6)
-                .addGap(1, 1, 1)
-                .addComponent(jPasswordField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(FieldNoTelepon, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
-                .addGap(11, 11, 11)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(FieldNamaLengkap, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(FieldJenisKelamin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
-                .addGap(1, 1, 1)
-                .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(4, 4, 4)
+                .addComponent(FieldNIK, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton3)
                     .addComponent(jButton4))
                 .addGap(32, 32, 32))
@@ -215,20 +227,45 @@ public class SignIn extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
+    // TODO add your handling code here:
+    MenuUtama mu = new MenuUtama();
+        mu.setVisible(true);
+        mu.pack();
+        mu.setLocationRelativeTo(null);
+        mu.setDefaultCloseOperation(MenuUtama.EXIT_ON_CLOSE); 
+        
+        dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        FieldNoTelepon.setText("");
+        FieldNIK.setText("");
+        FieldTanggalLahir.setText("");
+        FieldJenisKelamin.getSelectedItem().toString();
+        FieldEmail.setText("");
+        FieldNIK.setText("");
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        MenuUtama mu = new MenuUtama();
+        mu.show();
+        
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void FieldNIKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FieldNIKActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_FieldNIKActionPerformed
+
+    private void FieldNamaLengkapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FieldNamaLengkapActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FieldNamaLengkapActionPerformed
+
+    private void FieldNoTeleponActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FieldNoTeleponActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FieldNoTeleponActionPerformed
 
     /**
      * @param args the command line arguments
@@ -266,10 +303,15 @@ public class SignIn extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextPane FieldEmail;
+    private javax.swing.JComboBox<String> FieldJenisKelamin;
+    private javax.swing.JTextField FieldNIK;
+    private javax.swing.JTextField FieldNamaLengkap;
+    private javax.swing.JTextField FieldNoTelepon;
+    private javax.swing.JTextPane FieldTanggalLahir;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -279,12 +321,7 @@ public class SignIn extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPasswordField jPasswordField2;
-    private javax.swing.JPasswordField jPasswordField3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane2;
     // End of variables declaration//GEN-END:variables
 }

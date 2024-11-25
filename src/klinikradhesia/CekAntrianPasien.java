@@ -290,6 +290,13 @@ public class CekAntrianPasien extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        MenuUtama mu = new MenuUtama();
+        mu.setVisible(true);
+        mu.pack();
+        mu.setLocationRelativeTo(null);
+        mu.setDefaultCloseOperation(MenuUtama.EXIT_ON_CLOSE); 
+        
+        dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
